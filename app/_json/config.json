@@ -28,5 +28,22 @@
       "href": "#testimonial",
       "dropdown": null
     }
+  ],
+  "carousel": [
+    {
+      "name": "Chair",
+      "imageSrc": "/images/hero-chair.png",
+      "desc": "Elevate comfort and style with a custom chair, tailored to your taste and needs. Choose materials, design, and ergonomics for a seating experience that's uniquely yours."
+    },
+    {
+      "name": "Sofa",
+      "imageSrc": "/images/hero-sofa.png",
+      "desc": "Design your ideal sofa, aligning it perfectly with your space and decor. Select upholstery, size, and configuration for the ultimate living room centerpiece."
+    },
+    {
+      "name": "Bed",
+      "imageSrc": "/images/hero-bed.png",
+      "desc": "Transform your bedroom into a personalized haven of rest with a custom bed, crafted to your preferences. From frame to mattress, create the perfect sleep sanctuary"
+    }
   ]
 }

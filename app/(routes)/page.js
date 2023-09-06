@@ -1,3 +1,9 @@
+import Hero from "../_components/Hero";
+
 export default function Home() {
-  return <main>Artisan Woodworks</main>;
+  return (
+    <main>
+      <Hero />
+    </main>
+  );
 }
