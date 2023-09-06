@@ -1,0 +1,32 @@
+{
+  "navigation": [
+    {
+      "name": "Products",
+      "href": null,
+      "dropdown": [
+        {
+          "name": "Chair",
+          "href": "#"
+        },
+        {
+          "name": "Sofa",
+          "href": "#"
+        },
+        {
+          "name": "Bed",
+          "href": "#"
+        }
+      ]
+    },
+    {
+      "name": "Pricing",
+      "href": "#pricing",
+      "dropdown": null
+    },
+    {
+      "name": "Testimonial",
+      "href": "#testimonial",
+      "dropdown": null
+    }
+  ]
+}
