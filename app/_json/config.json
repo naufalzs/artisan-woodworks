@@ -45,5 +45,61 @@
       "imageSrc": "/images/hero-bed.png",
       "desc": "Transform your bedroom into a personalized haven of rest with a custom bed, crafted to your preferences. From frame to mattress, create the perfect sleep sanctuary"
     }
+  ],
+  "pricing": [
+    {
+      "title": "Artisan Woodworks",
+      "price": 150,
+      "properties": [
+        {
+          "name": "Available in Retail Store",
+          "checked": true
+        },
+        {
+          "name": "Delivery Service",
+          "checked": true
+        },
+        {
+          "name": "Premium Materials",
+          "checked": true
+        },
+        {
+          "name": "Unique Design",
+          "checked": true
+        },
+        {
+          "name": "Quality Assurance",
+          "checked": true
+        }
+      ],
+      "primary": true
+    },
+    {
+      "title": "Others",
+      "price": 50,
+      "properties": [
+        {
+          "name": "Available in Retail Store",
+          "checked": true
+        },
+        {
+          "name": "Delivery Service",
+          "checked": true
+        },
+        {
+          "name": "Premium Materials",
+          "checked": false
+        },
+        {
+          "name": "Unique Design",
+          "checked": false
+        },
+        {
+          "name": "Quality Assurance",
+          "checked": false
+        }
+      ],
+      "primary": false
+    }
   ]
 }
