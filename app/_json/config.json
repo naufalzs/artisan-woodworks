@@ -198,5 +198,46 @@
         ]
       }
     ]
+  },
+  "faq": {
+    "text": "Discover answers to commonly asked questions about our custom furniture maker services to help you make informed decisions:",
+    "list": [
+      {
+        "question": "How does the custom furniture design process work?",
+        "answer": "Our custom furniture design process is collaborative and tailored to your needs. We start with a consultation to understand your vision and preferences. From there, our skilled artisans create design concepts, and once approved, we move to crafting your unique piece."
+      },
+      {
+        "question": " What types of wood and materials do you use?",
+        "answer": "We pride ourselves on using high-quality, sustainably sourced materials, including various types of wood, metal, and upholstery options. The choice of materials depends on your design and functional requirements."
+      },
+      {
+        "question": "Can I customize existing designs or create something entirely unique?",
+        "answer": "Absolutely! Whether you want to modify one of our existing designs or start from scratch with a completely unique piece, our team is here to bring your vision to life."
+      },
+      {
+        "question": "What is the typical lead time for custom furniture orders?",
+        "answer": "Lead times vary depending on the complexity of the project and our current workload. During your consultation, we'll provide you with a more accurate estimate based on your specific requirements."
+      },
+      {
+        "question": "Do you offer delivery and assembly services?",
+        "answer": "Yes, we offer delivery services to ensure your furniture arrives safely. Assembly services are also available upon request for your convenience."
+      },
+      {
+        "question": "What is your pricing structure for custom furniture?",
+        "answer": "Our pricing is based on the materials used, design complexity, and labor involved. We strive to provide competitive rates while maintaining our commitment to quality craftsmanship. During your consultation, we'll provide a detailed quote for your project."
+      },
+      {
+        "question": "How do I care for and maintain my custom furniture?",
+        "answer": "We provide care and maintenance instructions with each piece of furniture. Generally, regular dusting and avoiding direct sunlight and moisture will help preserve your furniture's beauty and longevity."
+      },
+      {
+        "question": "What sets your custom furniture apart from mass-produced options?",
+        "answer": "Our custom furniture is handcrafted with precision and care, ensuring superior quality, unique design, and a personal touch. Unlike mass-produced items, our pieces are tailored to your specific preferences and needs."
+      },
+      {
+        "question": "What is your sustainability commitment in crafting custom furniture",
+        "answer": "We're committed to sustainability. We use responsibly sourced materials and eco-friendly practices whenever possible. Our goal is to create furniture that's beautiful and environmentally responsible."
+      }
+    ]
   }
 }
