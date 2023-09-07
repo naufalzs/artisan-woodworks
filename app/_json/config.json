@@ -133,5 +133,70 @@
       "testimony": "I had a tight deadline for furnishing my new home, and Artisan Woodworks delivered in every aspect. Their professionalism and ability to meet deadlines were impressive. The custom bedroom set they created is not only beautiful but also functional.",
       "rating": 4
     }
-  ]
+  ],
+  "footer": {
+    "brand": "Artisan Woodworks",
+    "tagline": "Crafting unique furniture pieces that bring your vision to life with precision and artistry.",
+    "navList": [
+      {
+        "label": "Company",
+        "items": [
+          {
+            "href": null,
+            "name": "Partners"
+          },
+          {
+            "href": null,
+            "name": "Blog"
+          },
+          {
+            "href": null,
+            "name": "Team"
+          },
+          {
+            "href": null,
+            "name": "Careers"
+          }
+        ]
+      },
+      {
+        "label": "Helpful Links",
+        "items": [
+          {
+            "href": null,
+            "name": "Contact Us"
+          },
+          {
+            "href": null,
+            "name": "FAQ"
+          },
+          {
+            "href": null,
+            "name": "Pricing"
+          }
+        ]
+      },
+      {
+        "label": "About",
+        "items": [
+          {
+            "href": null,
+            "name": "About Us"
+          },
+          {
+            "href": null,
+            "name": "Terms"
+          },
+          {
+            "href": null,
+            "name": "Returns Policy"
+          },
+          {
+            "href": null,
+            "name": "Refund Policy"
+          }
+        ]
+      }
+    ]
+  }
 }
