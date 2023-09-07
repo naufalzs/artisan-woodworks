@@ -38,7 +38,7 @@ export default function Footers() {
           <div className="flex-1 mt-10 space-y-6 items-start justify-between sm:flex md:space-y-0 md:mt-0">
             {footer.navList.map((navGroup, idx) => (
               <ul className="space-y-4" key={idx}>
-                <h4 className="text-primary font-medium">{navGroup.label}</h4>
+                <h4 className="text-text font-medium">{navGroup.label}</h4>
                 {navGroup.items.map((nav, idx) => (
                   <li key={idx}>
                     <a

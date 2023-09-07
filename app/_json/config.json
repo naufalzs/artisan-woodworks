@@ -163,11 +163,11 @@
         "label": "Helpful Links",
         "items": [
           {
-            "href": null,
+            "href": "/contact-us",
             "name": "Contact Us"
           },
           {
-            "href": null,
+            "href": "/faq",
             "name": "FAQ"
           },
           {

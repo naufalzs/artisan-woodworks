@@ -4,9 +4,9 @@ import { CheckIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import data from "../_json/config.json";
 
 const PricingCard = ({ title, price, properties, primary }) => (
-  <div className="bg-white rounded-2xl border first:border-primary border-white p-6 shadow-sm ring-2 first:ring-primary ring-white first:sm:order-last sm:px-8 lg:p-12">
+  <div className="bg-white rounded-2xl border first:border-hover border-white p-6 shadow-sm ring-2 first:ring-hover ring-white first:sm:order-last sm:px-8 lg:p-12">
     <div className="text-center">
-      <h2 className={`text-2xl font-light ${primary && "text-primary"}`}>
+      <h2 className={`text-2xl font-light ${primary && "text-hover"}`}>
         {title}
         <span className="sr-only">Plan</span>
       </h2>
@@ -58,7 +58,7 @@ export default function Pricing() {
     />
   ));
   return (
-    <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+    <div id="pricing" className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-center md:gap-8">
         {pricingItems}
       </div>
