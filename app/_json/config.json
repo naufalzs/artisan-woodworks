@@ -101,5 +101,37 @@
       ],
       "primary": false
     }
+  ],
+  "testimonial": [
+    {
+      "name": "John D.",
+      "title": "Exceptional Craftsmanship ",
+      "testimony": "I couldn't be happier with the custom dining table I received from Artisan Woodworks. Their attention to detail and craftsmanship are truly exceptional. The table is not just a piece of furniture; it's a work of art that has transformed my dining room.",
+      "rating": 5
+    },
+    {
+      "name": "Emily H.",
+      "title": "Personalized Design Expertise ",
+      "testimony": "Working with Artisan Woodworks was a delightful experience. They took the time to understand my style preferences and needs, and the result was a stunning coffee table that perfectly complements my living room. Their personalized design expertise is unmatched.",
+      "rating": 4
+    },
+    {
+      "name": "David M.",
+      "title": "Quality That Lasts a Lifetime ",
+      "testimony": "I invested in a custom kitchen island from Artisan Woodworks, and it was one of the best decisions I've made. The quality and durability of the piece are evident, and I know it will last a lifetime. I highly recommend their services to anyone seeking top-notch custom furniture.",
+      "rating": 5
+    },
+    {
+      "name": "Sarah L.",
+      "title": "Turning Dreams into Reality ",
+      "testimony": "Artisan Woodworks made my dream of a unique, handcrafted bookshelf come true. From the initial design discussions to the final installation, they were a pleasure to work with. The result is a one-of-a-kind piece that exceeds my expectations.",
+      "rating": 5
+    },
+    {
+      "name": "Michael R.",
+      "title": "Timely and Professional Servicex ",
+      "testimony": "I had a tight deadline for furnishing my new home, and Artisan Woodworks delivered in every aspect. Their professionalism and ability to meet deadlines were impressive. The custom bedroom set they created is not only beautiful but also functional.",
+      "rating": 4
+    }
   ]
 }
