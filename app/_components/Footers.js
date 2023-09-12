@@ -43,7 +43,7 @@ export default function Footers() {
                   <li key={idx}>
                     <a
                       href={nav.href}
-                      className="hover:underline hover:text-hover cursor-pointer"
+                      className={`hover:underline hover:text-hover cursor-pointer ${!nav.href && 'text-neutral-300'}`}
                     >
                       {nav.name}
                     </a>
