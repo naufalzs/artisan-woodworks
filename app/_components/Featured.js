@@ -29,7 +29,7 @@ export default function Featured() {
             <div className="mt-8 lg:mt-0 lg:absolute right-0 -top-[38%] bg-base aspect-[3/3.5] w-full md:w-2/3 lg:w-[350px] xl:w-[400px] p-8">
               <div className="relative h-full">
                 <Image
-                  src={"/images/hero-chair.png"}
+                  src={"/images/featured-chair.png"}
                   fill
                   sizes="400px"
                   alt="featured chair image"
@@ -60,7 +60,7 @@ export default function Featured() {
             <div className="mt-8 lg:mt-0 lg:absolute -top-[4%] left-0 bg-base aspect-[9/6] w-full md:w-2/3 lg:w-[500px] xl:w-[580px] p-8">
               <div className="relative h-full">
                 <Image
-                  src={"/images/hero-bed.png"}
+                  src={"/images/featured-bed.png"}
                   fill
                   sizes="600px"
                   alt="featured sofa image"
@@ -89,7 +89,7 @@ export default function Featured() {
             <div className="mt-8 lg:mt-0 lg:absolute right-[7%] -bottom-[38%] bg-base aspect-[4/3.5] w-full md:w-2/3 lg:w-[400px] xl:w-[450px] p-8">
               <div className="relative h-full">
                 <Image
-                  src={"/images/hero-sofa.png"}
+                  src={"/images/featured-sofa.png"}
                   fill
                   sizes="400px"
                   alt="featured sofa image"

@@ -13,7 +13,7 @@ export default function Hero() {
   const currentItem = furnitureData[activeIdx];
 
   const furnitureImages = furnitureData.map((item) => (
-    <div key={item.imageSrc} className="relative aspect-[5/3.5] ">
+    <div key={item.imageSrc} className="relative aspect-[1.8] ">
       <Image
         src={item.imageSrc}
         fill
@@ -26,10 +26,10 @@ export default function Hero() {
   ));
 
   return (
-    <section className="mx-auto max-w-7xl px-6 pb-12 lg:px-8">
+    <section className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
       <div className="mx-auto max-w-xl">
         <Slider
-          className="mb-6 cursor-pointer"
+          className="mb-10 cursor-pointer"
           arrows={false}
           dots={true}
           dotsClass="slick-dots line-indicator"
