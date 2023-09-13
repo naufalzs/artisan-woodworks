@@ -6,15 +6,15 @@
       "dropdown": [
         {
           "name": "Chair",
-          "href": "#"
+          "href": "/product/1"
         },
         {
           "name": "Sofa",
-          "href": "#"
+          "href": "/product/2"
         },
         {
           "name": "Bed",
-          "href": "#"
+          "href": "/product/3"
         }
       ]
     },

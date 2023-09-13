@@ -19,7 +19,7 @@ export default function Featured() {
                 design possibilities today!
               </p>
               <div className="mt-4">
-                <a href="#">
+                <a href="/product/1">
                   <button className="py-2 px-6 rounded-sm rounded-tl-xl bg-highlight text-text font-semibold hover:bg-yellow-300">
                     Explore Product
                   </button>
@@ -49,7 +49,7 @@ export default function Featured() {
                   await!
                 </p>
                 <div className="mt-4">
-                  <a href="#">
+                  <a href="/product/2">
                     <button className="py-2 px-6 rounded-sm rounded-tl-xl bg-highlight text-text font-semibold hover:bg-yellow-300">
                       Explore Product
                     </button>
@@ -79,7 +79,7 @@ export default function Featured() {
                 in your living space today!
               </p>
               <div className="mt-4">
-                <a href="#">
+                <a href="/product/3">
                   <button className="py-2 px-6 rounded-sm rounded-tl-xl bg-highlight text-text font-semibold hover:bg-yellow-300">
                     Explore Product
                   </button>
