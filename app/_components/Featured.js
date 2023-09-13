@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Featured() {
@@ -19,11 +20,11 @@ export default function Featured() {
                 design possibilities today!
               </p>
               <div className="mt-4">
-                <a href="/product/1">
+                <Link href="/product/1">
                   <button className="py-2 px-6 rounded-sm rounded-tl-xl bg-highlight text-text font-semibold hover:bg-yellow-300">
                     Explore Product
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="mt-8 lg:mt-0 lg:absolute right-0 -top-[38%] bg-base aspect-[3/3.5] w-full md:w-2/3 lg:w-[350px] xl:w-[400px] p-8">
@@ -49,11 +50,11 @@ export default function Featured() {
                   await!
                 </p>
                 <div className="mt-4">
-                  <a href="/product/2">
+                  <Link href="/product/2">
                     <button className="py-2 px-6 rounded-sm rounded-tl-xl bg-highlight text-text font-semibold hover:bg-yellow-300">
                       Explore Product
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -79,11 +80,11 @@ export default function Featured() {
                 in your living space today!
               </p>
               <div className="mt-4">
-                <a href="/product/3">
+                <Link href="/product/3">
                   <button className="py-2 px-6 rounded-sm rounded-tl-xl bg-highlight text-text font-semibold hover:bg-yellow-300">
                     Explore Product
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="mt-8 lg:mt-0 lg:absolute right-[7%] -bottom-[38%] bg-base aspect-[4/3.5] w-full md:w-2/3 lg:w-[400px] xl:w-[450px] p-8">

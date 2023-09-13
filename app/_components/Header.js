@@ -1,10 +1,8 @@
 "use client";
 import React, { Fragment, useState } from "react";
+import Link from "next/link";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
-import {
-  Bars3Icon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 import data from "../_json/config.json";
@@ -42,12 +40,12 @@ const NavMenuDesktop = ({ name, href, dropdown }) => {
                   className="relative gap-x-6 rounded-lg p-2 text-sm leading-6 hover:bg-gray-50"
                 >
                   <div className="flex-auto">
-                    <a
+                    <Link
                       href={item.href}
                       className="block font-semibold hover:text-hover"
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   </div>
                 </div>
               ))}
@@ -58,12 +56,12 @@ const NavMenuDesktop = ({ name, href, dropdown }) => {
     );
   } else {
     return (
-      <a
-        href={href}
-        className="text-sm font-semibold leading-6 hover:text-hover"
+      <Link
+        href={`/${href}`}
+        className="block font-semibold leading-6 hover:text-hover"
       >
         {name}
-      </a>
+      </Link>
     );
   }
 };

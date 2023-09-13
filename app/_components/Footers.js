@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { BiLogoInstagram, BiLogoFacebook, BiLogoTwitter } from "react-icons/bi";
 
 import data from "../_json/config.json";
@@ -41,12 +42,15 @@ export default function Footers() {
                 <h4 className="text-text font-medium">{navGroup.label}</h4>
                 {navGroup.items.map((nav, idx) => (
                   <li key={idx}>
-                    <a
-                      href={nav.href}
-                      className={`hover:underline hover:text-hover cursor-pointer ${!nav.href && 'text-neutral-300'}`}
+                    <Link
+                      href={nav.href || "/"}
+                      className={`hover:underline hover:text-hover cursor-pointer ${
+                        !nav.href && "text-neutral-300"
+                      }`}
                     >
                       {nav.name}
-                    </a>
+
+                    </Link>
                   </li>
                 ))}
               </ul>
