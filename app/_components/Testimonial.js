@@ -2,7 +2,12 @@
 import React, { useState } from "react";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
-import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
+import {
+  ArrowLeftIcon,
+  ArrowRightIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+} from "@heroicons/react/24/outline";
 import { StarIcon } from "@heroicons/react/20/solid";
 
 import data from "../_json/config.json";
@@ -132,20 +137,7 @@ export default function Testimonial() {
             id="keen-slider-previous"
             className="rounded-full border border-accent-red p-4 text-accent-red transition hover:bg-accent-red hover:text-white"
           >
-            <svg
-              className="h-5 w-5 -rotate-180 transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9 5l7 7-7 7"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-              />
-            </svg>
+            <ChevronLeftIcon className="w-5 h-5 text-accent-red group-hover:text-white" />
           </button>
 
           <button
@@ -153,20 +145,7 @@ export default function Testimonial() {
             id="keen-slider-next"
             className="rounded-full border border-accent-red p-4 text-accent-red transition hover:bg-accent-red hover:text-white"
           >
-            <svg
-              className="h-5 w-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9 5l7 7-7 7"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-              />
-            </svg>
+            <ChevronRightIcon className="w-5 h-5 text-accent-red group-hover:text-white" />
           </button>
         </div>
       </div>
