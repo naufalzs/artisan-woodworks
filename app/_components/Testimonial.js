@@ -97,23 +97,23 @@ export default function Testimonial() {
                 <button
                   aria-label="Previous slide"
                   id="keen-slider-previous-desktop"
-                  className="rounded-full border border-accent-red p-3 text-accent-red transition hover:bg-accent-red hover:text-white"
+                  className="group rounded-full border border-accent-red p-3 text-accent-red transition hover:bg-accent-red hover:text-white"
                   onClick={(e) =>
                     e.stopPropagation() || instanceRef.current?.prev()
                   }
                 >
-                  <ArrowLeftIcon className="w-6 h-6 text-accent-red hover:text-white" />
+                  <ArrowLeftIcon className="w-6 h-6 text-accent-red group-hover:text-white" />
                 </button>
 
                 <button
                   aria-label="Next slide"
                   id="keen-slider-next-desktop"
-                  className="rounded-full border border-accent-red p-3 text-accent-red transition hover:bg-accent-red hover:text-white"
+                  className="group rounded-full border border-accent-red p-3 text-accent-red transition hover:bg-accent-red hover:text-white"
                   onClick={(e) =>
                     e.stopPropagation() || instanceRef.current?.next()
                   }
                 >
-                  <ArrowRightIcon className="w-6 h-6 text-accent-red hover:text-white" />
+                  <ArrowRightIcon className="w-6 h-6 text-accent-red group-hover:text-white" />
                 </button>
               </div>
             )}
