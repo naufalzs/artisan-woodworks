@@ -26,7 +26,7 @@ export default function ProductDetail({ product }) {
     <section className="text-gray-700 body-font overflow-hidden bg-white">
       <div className="container px-5 py-4 mx-auto">
         <div className="lg:w-4/5 mx-auto flex flex-wrap">
-          <div className="relative lg:max-h-[480px] lg:w-1/2 w-full rounded border border-gray-200">
+          <div className="relative h-[300px] lg:h-auto lg:max-h-[480px] lg:w-1/2 w-full rounded border border-gray-200">
             <Image
               alt={`${product.name} image`}
               fill
