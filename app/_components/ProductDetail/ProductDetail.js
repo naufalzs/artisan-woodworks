@@ -3,6 +3,22 @@ import React from "react";
 import { HeartIcon, StarIcon } from "@heroicons/react/20/solid";
 import { StarIcon as StarOutline } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import { useForm } from "react-hook-form";
+
+const COLOR_PICKERS_DATA = [
+  {
+    name: "white",
+    className: "bg-white",
+  },
+  {
+    name: "black",
+    className: "bg-gray-700",
+  },
+  {
+    name: "red",
+    className: "bg-red-500",
+  },
+];
 
 const ReviewStar = ({ rating }) => {
   const maxRating = 5;
@@ -22,6 +38,36 @@ const ReviewStar = ({ rating }) => {
 };
 
 export default function ProductDetail({ product }) {
+  const { register, watch } = useForm({
+    defaultValues: {
+      "color-picker": "white",
+      "is-favorite": true
+    },
+  });
+  const isFavorite = watch("is-favorite");
+  const pickedColor = watch("color-picker");
+
+  const colorPickers = COLOR_PICKERS_DATA.map((color) => (
+    <div key={color.name}>
+      <label htmlFor={`color-${color.name}`}>
+        <div
+          className={`border-2 rounded-full w-6 h-6 focus:outline-none cursor-pointer ${
+            color.name === pickedColor ? "border-blue-400" : "border-gray-300"
+          }
+          ${color.className}
+          `}
+        ></div>
+      </label>
+      <input
+        className="hidden"
+        type="radio"
+        id={`color-${color.name}`}
+        {...register("color-picker")}
+        value={`${color.name}`}
+      />
+    </div>
+  ));
+
   return (
     <section className="text-gray-700 body-font overflow-hidden bg-white">
       <div className="container px-5 py-4 mx-auto">
@@ -50,11 +96,9 @@ export default function ProductDetail({ product }) {
             </div>
             <p className="leading-relaxed">{product.desc}</p>
             <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5">
-              <div className="flex">
+              <div className="flex gap-1">
                 <span className="mr-3">Color</span>
-                <button className="border-2 border-gray-300 rounded-full w-6 h-6 focus:outline-none"></button>
-                <button className="border-2 border-gray-300 ml-1 bg-gray-700 rounded-full w-6 h-6 focus:outline-none"></button>
-                <button className="border-2 border-gray-300 ml-1 bg-red-500 rounded-full w-6 h-6 focus:outline-none"></button>
+                {colorPickers}
               </div>
             </div>
             <div className="flex">
@@ -64,9 +108,21 @@ export default function ProductDetail({ product }) {
               <button className="ml-auto py-2 px-6 rounded-sm rounded-tl-xl bg-highlight text-text font-semibold hover:bg-yellow-300">
                 Explore Product
               </button>
-              <button className="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
-                <HeartIcon className="w-5 h-5 text-gray-500"/>
-              </button>
+              <label htmlFor="is-favorite">
+                <div className="group rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4 cursor-pointer">
+                  <HeartIcon
+                    className={`w-5 h-5 ${
+                      isFavorite ? "text-rose-500" : "text-gray-500"
+                    } transition-colors`}
+                  />
+                </div>
+              </label>
+              <input
+                className="hidden"
+                type="checkbox"
+                id="is-favorite"
+                {...register("is-favorite")}
+              />
             </div>
           </div>
         </div>
