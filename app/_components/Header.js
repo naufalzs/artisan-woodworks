@@ -1,7 +1,7 @@
 "use client";
-import React, { Fragment, useState } from "react";
+import React, {  useState } from "react";
 import Link from "next/link";
-import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
+import { Dialog, Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
@@ -14,45 +14,35 @@ function classNames(...classes) {
 const NavMenuDesktop = ({ name, href, dropdown }) => {
   if (dropdown) {
     return (
-      <Popover className="relative">
-        <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 hover:text-hover">
+      <div className="relative group cursor-pointer">
+        <div className="flex items-center gap-x-1 font-semibold leading-6 hover:text-hover">
           {name}
           <ChevronDownIcon
-            className="h-5 w-5 flex-none text-gray-400"
+            className="h-5 w-5 flex-none text-gray-400 group-hover:rotate-180 transition-transform duration-200"
             aria-hidden="true"
           />
-        </Popover.Button>
+        </div>
 
-        <Transition
-          as={Fragment}
-          enter="transition ease-out duration-200"
-          enterFrom="opacity-0 translate-y-1"
-          enterTo="opacity-100 translate-y-0"
-          leave="transition ease-in duration-150"
-          leaveFrom="opacity-100 translate-y-0"
-          leaveTo="opacity-0 translate-y-1"
-        >
-          <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-[160px] overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5">
-            <div className="p-2">
-              {dropdown.map((item) => (
-                <div
-                  key={item.name}
-                  className="relative gap-x-6 rounded-lg p-2 text-sm leading-6 hover:bg-gray-50"
-                >
-                  <div className="flex-auto">
-                    <Link
-                      href={item.href}
-                      className="block font-semibold hover:text-hover"
-                    >
-                      {item.name}
-                    </Link>
-                  </div>
+        <div className="invisible opacity-0 absolute -left-8 top-full z-10 mt-3 w-screen max-w-[160px] overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 group-hover:opacity-100 group-hover:visible transition-all ease-in">
+          <div className="p-2">
+            {dropdown.map((item) => (
+              <div
+                key={item.name}
+                className="relative gap-x-6 rounded-lg p-2 text-sm leading-6 hover:bg-gray-50"
+              >
+                <div className="flex-auto">
+                  <Link
+                    href={item.href}
+                    className="block font-semibold hover:text-hover"
+                  >
+                    {item.name}
+                  </Link>
                 </div>
-              ))}
-            </div>
-          </Popover.Panel>
-        </Transition>
-      </Popover>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     );
   } else {
     return (
@@ -156,9 +146,9 @@ export default function Header() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <Popover.Group className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-12">
           {navItemsDesktop}
-        </Popover.Group>
+        </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
             href="/contact-us"

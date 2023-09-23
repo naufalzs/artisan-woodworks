@@ -41,7 +41,7 @@ export default function ProductDetail({ product }) {
   const { register, watch } = useForm({
     defaultValues: {
       "color-picker": "white",
-      "is-favorite": true
+      "is-favorite": true,
     },
   });
   const isFavorite = watch("is-favorite");
