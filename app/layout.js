@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 
 import Header from "./_components/Header";
 import Footers from "./_components/Footers";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         suppressHydrationWarning={true}
         className={`${inter.className} bg-base text-text`}
       >
+        <Toaster />
         <Header />
         {children}
         <Footers />
